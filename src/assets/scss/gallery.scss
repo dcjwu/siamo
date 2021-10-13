@@ -1,0 +1,39 @@
+@import "vars";
+@import "mixins";
+
+.gallery {
+  padding: 3rem 0;
+  background-color: $blue;
+  &__main {
+    margin-bottom: 4rem;
+  }
+  &__header {
+    margin-bottom: 2rem;
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  &__name {
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+  }
+  &__card {
+    @include breakpoint($tablet2) {
+      flex-direction: column;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.row-cols-sm-2>* {
+  @include breakpoint($tablet2) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+@import "vars";
+@import "mixins";
+
+.footer {
+  background-color: $blue;
+  &__wrapper {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint($tablet2) {
+      padding: 3rem 0;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+  }
+  &__link {
+    margin: 0 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    @include breakpoint($tablet2) {
+      margin-right: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    &:first-child {
+      @include breakpoint($tablet2) {
+        margin-bottom: 0;
+      }
+    }
+    & a {
+      font-size: 1.7rem;
+      transition: color 0.1s linear;
+      &:hover,
+      &:focus {
+        color: $yellow;
+        & + .footer__icon {
+          color: $yellow
+        }
+      }
+    }
+  }
+  &__icon {
+    margin-right: 1.8rem;
+    font-size: 3.5rem;
+    transition: color 0.1s linear;
+  }
+}

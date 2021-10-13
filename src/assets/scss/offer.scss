@@ -1,0 +1,146 @@
+@import "vars";
+@import "mixins";
+
+.offer {
+  &__inner {
+    padding: 4rem 0;
+    background-color: $yellow;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__header {
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    @include breakpoint($tablet1) {
+      font-size: 5rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 4rem;
+    }
+  }
+  &__text {
+    max-width: 700px;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+    @include breakpoint($tablet1) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 1.4rem;
+    }
+  }
+  &__video {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    &::after {
+      padding-top: 56.25%;
+      display: block;
+      content: '';
+    }
+    & iframe {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 80%;
+    }
+  }
+}
+
+.card {
+  border: none;
+  margin-right: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  @include breakpoint($laptop) {
+    margin-right: 1.5rem;
+  }
+  @include breakpoint($tablet1) {
+    margin-right: .5rem;
+  }
+  @include breakpoint($tablet2) {
+    flex-direction: row;
+    margin-right: 0;
+  }
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &-body {
+    @include breakpoint($tablet2) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @include breakpoint($mobile) {
+      flex: 1 1 auto;
+    }
+  }
+  &-group {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    @include breakpoint($tablet2) {
+      display: block;
+    }
+    @include breakpoint($mobile) {
+      display: flex;
+      flex-flow: row wrap;
+      width: 90%;
+      margin: -2rem auto 0 auto;
+    }
+    &>.card {
+      @include breakpoint($tablet2) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &-img-top {
+    @include breakpoint($tablet2) {
+      object-fit: cover;
+      width: 25rem;
+      height: auto;
+    }
+    @include breakpoint($mobile) {
+      object-fit: initial;
+      width: 100%;
+    }
+  }
+  &-title {
+    font-family: $fontText;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $black;
+    text-transform: capitalize;
+    @include breakpoint($laptop) {
+      font-size: 1.85rem;
+    }
+    @include breakpoint($tablet) {
+      font-size: 1.7rem;
+    }
+    @include breakpoint($tablet1) {
+      font-size: 1.6rem;
+    }
+  }
+  &-text {
+    font-family: $fontText;
+    text-align: center;
+    font-weight: 500;
+    color: $black;
+    @include breakpoint($laptop) {
+      font-size: 1.35rem;
+    }
+  }
+}

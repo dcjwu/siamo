@@ -1,0 +1,203 @@
+@import "vars";
+@import "mixins";
+
+.about {
+  margin-bottom: 1rem;
+  &__bg {
+    padding: 20rem 0;
+    background-image: url("../images/about.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__header {
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    @include breakpoint($tablet1) {
+      font-size: 5rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 4rem;
+    }
+  }
+  &__text {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+    @include breakpoint($tablet1) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 1.4rem;
+    }
+  }
+  &__obj {
+    padding: 2.5rem 0;
+    background-color: $blue;
+  }
+  &__weare {
+    padding: 20rem 0;
+    background-image: url("../images/weare.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint($tablet1) {
+      padding: 15rem 0;
+    }
+    @include breakpoint($tablet2) {
+      padding: 10rem 0;
+    }
+    @include breakpoint($mobile) {
+      padding: 5rem 0;
+    }
+  }
+  &__stand {
+    padding: 2.5rem 0;
+    background-color: $yellow;
+  }
+}
+
+.obj {
+  &__header {
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    @include breakpoint($tablet1) {
+      font-size: 5rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 4rem;
+    }
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+  &__card {
+    @include breakpoint($mobile) {
+      width: 100%;
+    }
+  }
+}
+
+.weare {
+  &__header {
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    @include breakpoint($tablet1) {
+      font-size: 5rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 4rem;
+    }
+  }
+  &__text {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    max-width: 750px;
+    text-align: center;
+    @include breakpoint($tablet1) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.stand {
+  &__header {
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    @include breakpoint($tablet1) {
+      font-size: 5rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 4rem;
+    }
+  }
+}
+
+.team {
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint($tablet1) {
+      max-width: 50%;
+    }
+  }
+  &__header {
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    color: $black;
+    @include breakpoint($tablet1) {
+      font-size: 5rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 4rem;
+    }
+  }
+  &__text {
+    font-size: 1.8rem;
+    margin: 0 auto 2rem auto;
+    max-width: 750px;
+    text-align: center;
+    color: $black;
+    @include breakpoint($tablet1) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 1.4rem;
+    }
+  }
+  &__img {
+    margin-bottom: .5rem;
+    object-fit: cover;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    @include breakpoint($tablet) {
+      width: 150px;
+      height: 150px;
+    }
+    @include breakpoint($mobile) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  &__name {
+    margin-bottom: .5rem;
+    font-family: $fontHeaders;
+    font-weight: 500;
+    color: $black;
+    font-size: 2.2rem;
+    @include breakpoint($mobile) {
+      font-size: 1.9rem;
+    }
+  }
+  &__desc {
+    margin: .5rem 0 2rem 0;
+    font-family: $fontText;
+    font-weight: 500;
+    color: $black;
+    font-size: 1.35rem;
+    text-align: center;
+    @include breakpoint($mobile) {
+      font-size: 1.2rem;
+    }
+  }
+}

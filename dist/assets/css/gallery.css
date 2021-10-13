@@ -1,0 +1,42 @@
+.gallery {
+    padding: 3rem 0;
+    background-color: #10153B;
+}
+
+.gallery__main {
+    margin-bottom: 4rem;
+}
+
+.gallery__header {
+    margin-bottom: 2rem;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.gallery__name {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .gallery__card {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.gallery__img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .row-cols-sm-2 > * {
+        width: 100%;
+    }
+}

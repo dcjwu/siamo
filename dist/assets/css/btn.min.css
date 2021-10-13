@@ -1,0 +1,12 @@
+.btn {
+  padding: 0.65rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: #C7A20D;
+  color: #F9F9F9;
+}
+.btn:hover, .btn:focus {
+  color: inherit;
+  background-color: #a1830a;
+}

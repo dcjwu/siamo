@@ -1,0 +1,45 @@
+@import "vars";
+@import "mixins";
+
+.header {
+  background-image: url(../images/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  &__wrapper {
+    padding: 20rem 0; // уменьшить на адаптиве
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__header {
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    @include breakpoint($tablet1) {
+      font-size: 5rem;
+    }
+    @include breakpoint($mobile) {
+      font-size: 4rem;
+    }
+  }
+
+  &__text {
+    margin: 4rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+    @include breakpoint($tablet1) {
+      margin: 3rem 0;
+      font-size: 1.6rem;
+    }
+    @include breakpoint($mobile) {
+      margin: 2rem 0;
+      font-size: 1.4rem;
+    }
+  }
+}

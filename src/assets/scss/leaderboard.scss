@@ -1,0 +1,23 @@
+@import "vars";
+@import "mixins";
+
+.leaderboard {
+  padding: 20rem 0;
+  background-image: url("../images/leaderboard.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include breakpoint($tablet2) {
+    padding: 13rem 0;
+  }
+  & h1 {
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12rem;
+    color: $white;
+    @include breakpoint($tablet2) {
+      font-size: 9rem;
+    }
+  }
+}

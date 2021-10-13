@@ -1,0 +1,29 @@
+@import "vars";
+@import "vendor/reset";
+@import "mixins";
+
+body {
+    background-color: $white;
+    font-family: $fontText;
+    font-size: 1.5rem;
+    color: $white;
+}
+
+hr {
+    color: $black;
+    width: 100%;
+}
+
+@import "nav";
+@import "btn";
+@import "header";
+@import "offer";
+@import "description";
+@import "partners";
+@import "footer";
+
+@import "signup";
+@import "events";
+@import "leaderboard";
+@import "gallery";
+@import "about";
