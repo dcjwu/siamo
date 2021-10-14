@@ -3,6 +3,12 @@
     padding: 3rem 0;
 }
 
+@media (max-width: 767px) {
+    .partners {
+        padding-bottom: 2rem;
+    }
+}
+
 .partners__header {
     margin-bottom: 3rem;
     font-family: "Oswald", sans-serif;
@@ -48,6 +54,12 @@
     .partners__img {
         width: 150px;
         height: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .partners__img {
+        margin-bottom: 1rem;
     }
 }
 

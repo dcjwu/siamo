@@ -38,22 +38,38 @@
     }
   }
   &__video {
-    overflow: hidden;
-    position: relative;
-    width:100%;
-    &::after {
-      padding-top: 56.25%;
-      display: block;
-      content: '';
+    //overflow: hidden;
+    //position: relative;
+    //width:100%;
+    //&::after {
+    //  padding-top: 56.25%;
+    //  display: block;
+    //  content: '';
+    //}
+    //& iframe {
+    //  position: absolute;
+    //  top: 0;
+    //  left: 50%;
+    //  transform: translateX(-50%);
+    //  width: 80%;
+    //  height: 80%;
+    //}
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.video {
+  &__link {
+    width: 85%;
+    @include breakpoint($tablet2) {
+      width: 95%;
     }
-    & iframe {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80%;
-      height: 80%;
-    }
+  }
+  &__preview {
+    width: 100%;
   }
 }
 

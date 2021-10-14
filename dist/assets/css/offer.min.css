@@ -42,22 +42,22 @@
   }
 }
 .offer__video {
-  overflow: hidden;
-  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__link {
+  width: 85%;
+}
+@media (max-width: 767px) {
+  .video__link {
+    width: 95%;
+  }
+}
+.video__preview {
   width: 100%;
-}
-.offer__video::after {
-  padding-top: 56.25%;
-  display: block;
-  content: "";
-}
-.offer__video iframe {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  height: 80%;
 }
 
 .card {

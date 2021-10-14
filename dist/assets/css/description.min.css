@@ -1,27 +1,6 @@
 .description {
   padding: 4rem 0;
   background-color: #10153B;
-  margin-top: -12rem;
-}
-@media (max-width: 1399px) {
-  .description {
-    margin-top: -10rem;
-  }
-}
-@media (max-width: 1199px) {
-  .description {
-    margin-top: -8rem;
-  }
-}
-@media (max-width: 991px) {
-  .description {
-    margin-top: -6rem;
-  }
-}
-@media (max-width: 767px) {
-  .description {
-    margin-top: -4rem;
-  }
 }
 .description__wrapper {
   display: flex;
