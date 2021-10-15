@@ -11,3 +11,8 @@
     color: inherit;
     background-color: #a1830a;
 }
+
+.btn-close {
+    color: #10153B;
+    opacity: 1;
+}

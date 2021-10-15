@@ -14,6 +14,11 @@ hr {
     width: 100%;
 }
 
+.modal-open {
+    overflow: hidden;
+    padding-right: 0px;
+}
+
 @import "nav";
 @import "btn";
 @import "header";
@@ -21,6 +26,7 @@ hr {
 @import "description";
 @import "partners";
 @import "footer";
+@import "modal";
 
 @import "signup";
 @import "events";

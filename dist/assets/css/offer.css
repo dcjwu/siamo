@@ -54,25 +54,103 @@
 }
 
 .offer__video {
-    overflow: hidden;
+    margin: 2rem 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
+}
+
+.video__link {
+    cursor: default;
+    width: 80%;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .video__link {
+        width: 95%;
+    }
+}
+
+.video__preview {
     width: 100%;
+    -webkit-filter: brightness(65%);
+    filter: brightness(65%);
 }
 
-.offer__video::after {
-    padding-top: 56.25%;
-    display: block;
-    content: "";
-}
-
-.offer__video iframe {
+.video__header {
+    padding: 0.75rem;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-decoration: none;
+    text-align: center;
     position: absolute;
     top: 0;
     left: 50%;
+    z-index: 999;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    background-color: rgba(36, 36, 36, 0.3);
     width: 80%;
-    height: 80%;
+}
+
+@media (max-width: 1199px) {
+    .video__header {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .video__header {
+        font-size: 2rem;
+        width: 95%;
+    }
+}
+
+.video__button {
+    cursor: pointer;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: rgba(36, 36, 36, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .video__button {
+        padding: 1rem;
+    }
+}
+
+.video__button:hover, .video__button:focus {
+    background-color: rgba(199, 162, 13, 0.7);
+}
+
+.video__button i {
+    color: black;
+    font-size: 8rem;
+}
+
+@media (max-width: 1199px) {
+    .video__button i {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .video__button i {
+        font-size: 5rem;
+    }
 }
 
 .card {

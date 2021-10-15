@@ -12,4 +12,8 @@
     color: inherit;
     background-color: darken($yellow, 8%);
   }
+  &-close {
+    color: $blue;
+    opacity: 1;
+  }
 }

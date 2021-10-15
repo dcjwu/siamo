@@ -1,0 +1,40 @@
+@import "vars";
+@import "mixins";
+
+.modal {
+  &__header {
+    font-family: $fontHeaders;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: $blue;
+    @include breakpoint($tablet) {
+      font-size: 2.5rem;
+    }
+    @include breakpoint($tablet2) {
+      font-size: 2rem;
+    }
+  }
+  &__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__video {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    &::after {
+      padding-top: 56.25%;
+      display: block;
+      content: '';
+    }
+    & iframe {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
