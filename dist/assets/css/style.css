@@ -1434,9 +1434,10 @@ hr {
 
 .about__bg {
     padding: 20rem 0;
-    background-image: url("../images/about.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../images/about.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 .about__header {
