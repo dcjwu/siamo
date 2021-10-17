@@ -1,13 +1,13 @@
-.signup__form {
+.contact__form {
     padding: 3rem 0;
 }
 
-.signup__inner {
+.contact__inner {
     padding: 4rem 0;
     background-color: #10153B;
 }
 
-.signup__top {
+.contact__top {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-.signup__header {
+.contact__header {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -26,13 +26,35 @@
 }
 
 @media (max-width: 991px) {
-    .signup__header {
+    .contact__header {
         font-size: 5rem;
     }
 }
 
 @media (max-width: 575px) {
-    .signup__header {
+    .contact__header {
         font-size: 4rem;
+    }
+}
+
+.contact__text {
+    max-width: 800px;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    color: #F9F9F9;
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    .contact__text {
+        max-width: 650px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact__text {
+        max-width: 500px;
+        font-size: 1.4rem;
     }
 }

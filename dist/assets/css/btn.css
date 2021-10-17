@@ -16,3 +16,8 @@
     color: #10153B;
     opacity: 1;
 }
+
+.btn--form {
+    display: block;
+    margin: 0 auto;
+}

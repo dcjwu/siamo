@@ -501,71 +501,11 @@ hr {
 @media (max-width: 575px) {
     .login__form {
         right: 0;
-        width: 20rem;
     }
 }
 
 .login__form.visible {
     display: block;
-}
-
-.login__form-control {
-    margin-bottom: 1rem;
-    padding-bottom: 2rem;
-    position: relative;
-}
-
-.login__form-control input {
-    padding: 0.5rem;
-    border: 1px solid #f0f0f0;
-    border-radius: 4px;
-    display: block;
-    font-family: inherit;
-    font-size: 1.4rem;
-    width: 100%;
-}
-
-.login__form-control input:focus {
-    outline: 0;
-    border-color: #777;
-}
-
-.login__form-control.success input {
-    border-color: #2ecc71;
-}
-
-.login__form-control.error input {
-    border-color: #e74c3c;
-}
-
-.login__form-control i {
-    visibility: hidden;
-    position: absolute;
-    top: 8px;
-    right: 10px;
-}
-
-.login__form-control.success i.fa-check-circle {
-    color: #2ecc71;
-    visibility: visible;
-}
-
-.login__form-control.error i.fa-exclamation-circle {
-    color: #e74c3c;
-    visibility: visible;
-}
-
-.login__form-control small {
-    color: #e74c3c;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-    font-size: 1.2rem;
-}
-
-.login__form-control.error small {
-    visibility: visible;
 }
 
 .btn {
@@ -585,6 +525,11 @@ hr {
 .btn-close {
     color: #10153B;
     opacity: 1;
+}
+
+.btn--form {
+    display: block;
+    margin: 0 auto;
 }
 
 .header {
@@ -1188,6 +1133,133 @@ hr {
     height: 100%;
 }
 
+.form-control {
+    padding: 0 0 20px;
+    margin: auto auto 10px;
+    position: relative;
+    font-size: 1.4rem;
+    border: none;
+    background-color: initial;
+    color: initial;
+    width: 65%;
+}
+
+@media (max-width: 575px) {
+    .form-control {
+        width: 80%;
+    }
+}
+
+.form-control--pass {
+    position: relative;
+}
+
+.form-control label {
+    color: #242424;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.form-control input {
+    border: 2px solid #F9F9F9;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #C7A20D;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 41px;
+    right: 10px;
+}
+
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1.3rem;
+    visibility: hidden;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form-control--login {
+    width: 100%;
+}
+
+.form-control--login i {
+    top: 16px;
+}
+
+.signup__form {
+    padding: 3rem 0;
+}
+
+.signup__inner {
+    padding: 4rem 0;
+    background-color: #10153B;
+}
+
+.signup__top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.signup__header {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    color: #F9F9F9;
+}
+
+@media (max-width: 991px) {
+    .signup__header {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .signup__header {
+        font-size: 4rem;
+    }
+}
+
 .events {
     margin: 3rem 0;
 }
@@ -1638,5 +1710,66 @@ hr {
 @media (max-width: 575px) {
     .team__desc {
         font-size: 1.2rem;
+    }
+}
+
+.contact__form {
+    padding: 3rem 0;
+}
+
+.contact__inner {
+    padding: 4rem 0;
+    background-color: #10153B;
+}
+
+.contact__top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact__header {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    color: #F9F9F9;
+}
+
+@media (max-width: 991px) {
+    .contact__header {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact__header {
+        font-size: 4rem;
+    }
+}
+
+.contact__text {
+    max-width: 800px;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    color: #F9F9F9;
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    .contact__text {
+        max-width: 650px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact__text {
+        max-width: 500px;
+        font-size: 1.4rem;
     }
 }

@@ -1,7 +1,7 @@
 @import "vars";
 @import "mixins";
 
-.signup {
+.contact {
   &__form {
     padding: 3rem 0;
   }
@@ -26,6 +26,21 @@
     }
     @include breakpoint($mobile) {
       font-size: 4rem;
+    }
+  }
+  &__text {
+    max-width: 800px;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    color: $white;
+    text-align: center;
+    @include breakpoint($tablet) {
+      max-width: 650px;
+      font-size: 1.5rem;
+    }
+    @include breakpoint($mobile) {
+      max-width: 500px;
+      font-size: 1.4rem;
     }
   }
 }
