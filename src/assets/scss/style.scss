@@ -16,7 +16,7 @@ hr {
 
 .modal-open {
     overflow: hidden;
-    padding-right: 0px;
+    padding-right: 0;
 }
 
 @import "nav";
@@ -35,3 +35,4 @@ hr {
 @import "gallery";
 @import "about";
 @import "contact";
+@import "photos";
