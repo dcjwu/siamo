@@ -12,7 +12,6 @@ const contactForm = document.querySelector('#contactForm'),
     passwordNew = document.querySelector('#passwordNew'),
     password2New = document.querySelector('#password2New')
 
-
 if (contactForm) {
     contactForm.addEventListener('submit', e => {
         e.preventDefault()
