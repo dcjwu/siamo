@@ -1,0 +1,38 @@
+.signup__form {
+    padding: 3rem 0;
+}
+
+.signup__inner {
+    padding: 4rem 0;
+    background-color: #10153B;
+}
+
+.signup__top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.signup__header {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    color: #F9F9F9;
+}
+
+@media (max-width: 991px) {
+    .signup__header {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .signup__header {
+        font-size: 4rem;
+    }
+}

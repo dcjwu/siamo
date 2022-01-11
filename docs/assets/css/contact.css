@@ -1,0 +1,60 @@
+.contact__form {
+    padding: 3rem 0;
+}
+
+.contact__inner {
+    padding: 4rem 0;
+    background-color: #10153B;
+}
+
+.contact__top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact__header {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    color: #F9F9F9;
+}
+
+@media (max-width: 991px) {
+    .contact__header {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact__header {
+        font-size: 4rem;
+    }
+}
+
+.contact__text {
+    max-width: 800px;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    color: #F9F9F9;
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    .contact__text {
+        max-width: 650px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact__text {
+        max-width: 500px;
+        font-size: 1.4rem;
+    }
+}
