@@ -7,4 +7,4 @@
 
 ---
 ### Status: ####
- _In february 2022 I am going to rewrite this project to React, implement firebase DB and authentication._
+ _Project is finished._
