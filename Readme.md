@@ -1,10 +1,11 @@
-# Website for SIAMO #
-#### September 2021 ####
----
-## Created frontend website with basic HTML, CSS, JS. ##
-#### What I used: ####
-- [Gulp](https://gulpjs.com/)
+#### Context:
+September 2021.__ Second attempt creating a website using plain HTML and gulp.
 
----
-### Status: ####
- _Project is finished._
+#### Technologies used:
+- Gulp
+- SASS
+- HTML
+- JavaScript
+
+#### Status:
+Project is finished.
